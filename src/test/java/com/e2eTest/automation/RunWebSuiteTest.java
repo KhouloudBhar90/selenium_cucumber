@@ -22,6 +22,8 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 		plugin = {"pretty", "html:target/cucumber-report.html"},
 		// ajouter le tags du scénario qu'on souhaite l'executer ou mettre le tag de la feature si on souhaite executer tout les scénario
 		tags = ("@login-CasPassant"),
+		// le path ou se trouve le code 
+		// glue = {},
 		// pour avoir un test lisible dans le console
 		monochrome = true,
 		// 
