@@ -26,7 +26,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 		// glue = {},
 		// pour avoir un test lisible dans le console
 		monochrome = true,
-		// 
+		// permet de respecter la convention de développemnt au niveau du nom de method "jeSaisieLeUser"
 		snippets = CAMELCASE
 		)
 
