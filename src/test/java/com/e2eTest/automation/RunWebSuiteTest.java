@@ -16,17 +16,17 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 * integration.
 */  
 @CucumberOptions(
-		// le path ou se trouve les specs feature 
+		/* Location of feature file */
 		features = {"src/specs/features"},
-		// pretty pour la mise en forme et html:... le chemin et le nom du fichier report 
+		/* "pretty" is used to get format "html:" location and name of report file */
 		plugin = {"pretty", "html:target/cucumber-report.html"},
-		// ajouter le tags du scénario qu'on souhaite l'executer ou mettre le tag de la feature si on souhaite executer tout les scénario
+		// the test case which you want to execute */
 		tags = ("@login-CasPassant"),
-		// le path ou se trouve le code 
+		/* Location of code */
 		// glue = {},
-		// pour avoir un test lisible dans le console
+		/* To have a lisible test in the console */
 		monochrome = true,
-		// permet de respecter la convention de développemnt au niveau du nom de method "jeSaisieLeUser"
+		/* To respecte the developpement  convention for example the name of method "jeSaisieLeUser"*/
 		snippets = CAMELCASE
 		)
 

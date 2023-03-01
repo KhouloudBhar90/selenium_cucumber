@@ -56,9 +56,9 @@ public class Setup {
 			break;
 		default:
 			throw new IllegalArgumentException("Browser \"" + browser + "\" is not supported. ");
-
 		}
 	}
+	
 
 	/* GETTER */
 	public static WebDriver getDriver() {

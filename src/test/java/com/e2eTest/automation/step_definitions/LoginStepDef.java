@@ -1,5 +1,7 @@
 package com.e2eTest.automation.step_definitions;
 
+import org.junit.Assert;
+
 import com.e2eTest.automation.page_objects.LoginPage;
 
 import io.cucumber.java.en.And;
@@ -8,7 +10,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginStepDef {
-	
+	/* if we need import webElement you should use LoginPage else if you want import method you must use loginPage*/
 	public LoginPage loginPage;
 	
 	public LoginStepDef() {
@@ -32,7 +34,9 @@ public class LoginStepDef {
 		loginPage.clickOnBtnLogin();
 	}
 	@Then("Je me redirige vers la page Home {string}")
-	public void jeMeRedirigeVersLaPageHome(String string) {
+	public void jeMeRedirigeVersLaPageHome(String title) {
+		String title_page = LoginPage.titlePage.getText();
+		Assert.assertEquals(title_page, title);
 	    
 	}
 
